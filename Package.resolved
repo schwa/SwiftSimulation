@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "everything",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/schwa/Everything",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c6de23db8b223b80767110f47c8fb11e14c8c39f"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -4,25 +4,38 @@
 import PackageDescription
 
 let package = Package(
-    name: "Simulation",
+    name: "SwiftSimulation",
+    platforms: [
+        .iOS("16.0"),
+        .macOS("13.0"),
+        .macCatalyst("16.0"),
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "Simulation",
-            targets: ["Simulation"]),
+            name: "SwiftSimulation",
+            targets: ["SwiftSimulation"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+         .package(url: "https://github.com/schwa/Everything", branch: "main")
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "Simulation",
-            dependencies: []),
+
+        .target(name: "SwiftSimulation", dependencies: ["Everything"], resources: [
+            .copy("Life/Patterns/acorn_105.lif"),
+            .copy("Life/Patterns/bigglider_105.lif"),
+            .copy("Life/Patterns/glider_105.lif"),
+            .copy("Life/Patterns/gliderloop_105.lif"),
+            .copy("Life/Patterns/gosperglidergun_105.lif"),
+            .copy("Life/Patterns/gunstar_105.lif"),
+            .copy("Life/Patterns/hacksaw_105.lif"),
+            .copy("Life/Patterns/newgun2_105.lif"),
+        ], swiftSettings: [.unsafeFlags(["-Xfrontend", "-warn-concurrency", "-Xfrontend", "-enable-actor-data-race-checks"])]),
+
+
         .testTarget(
             name: "SimulationTests",
-            dependencies: ["Simulation"]),
+            dependencies: ["SwiftSimulation"]),
     ]
 )

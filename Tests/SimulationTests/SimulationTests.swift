@@ -1,11 +1,7 @@
 import XCTest
-@testable import Simulation
+@testable import SwiftSimulation
 
 final class SimulationTests: XCTestCase {
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(Simulation().text, "Hello, World!")
     }
 }
