@@ -1,11 +1,3 @@
-//
-//  Simulation.swift
-//  GraphicsDemos
-//
-//  Created by Jonathan Wight on 9/16/17.
-//  Copyright © 2017 schwa.io. All rights reserved.
-//
-
 import Everything
 import Foundation
 

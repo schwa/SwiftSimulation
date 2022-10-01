@@ -1,11 +1,3 @@
-//
-//  Simulation.swift
-//  GraphicsDemos_OSX
-//
-//  Created by Jonathan Wight on 11/30/19.
-//  Copyright © 2019 schwa.io. All rights reserved.
-//
-
 import Combine
 import Everything
 import SwiftUI

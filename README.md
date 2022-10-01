@@ -1,3 +1,3 @@
-# Simulation
+# SwiftSimulation
 
-A description of this package.
+A micro-framework for running time or step based simulations.

@@ -1,11 +1,3 @@
-//
-//  Life.swift
-//  GraphicsDemos
-//
-//  Created by Jonathan Wight on 4/19/17.
-//  Copyright © 2017 schwa.io. All rights reserved.
-//
-
 import CoreGraphics
 import Everything
 import Foundation

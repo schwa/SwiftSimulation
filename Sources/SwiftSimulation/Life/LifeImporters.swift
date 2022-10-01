@@ -1,11 +1,3 @@
-//
-//  LifeImporters.swift
-//  GraphicsDemos
-//
-//  Created by Jonathan Wight on 10/9/17.
-//  Copyright © 2017 schwa.io. All rights reserved.
-//
-
 import Everything
 import Foundation
 
@@ -60,8 +52,6 @@ public func life105_importer(url: URL) throws -> Array2D<UInt8> {
         width: rowStrings.reduce(0) { max($1.count, $0) },
         height: rowStrings.count
     )
-    warning("\(size)")
-
     let rows: [[UInt8]] = try rowStrings.map {
         try $0.map {
             switch $0 {
