@@ -18,7 +18,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-         .package(url: "https://github.com/schwa/Everything", branch: "main")
+         .package(url: "https://github.com/schwa/Everything", from: "0.0.1")
     ],
     targets: [
 
