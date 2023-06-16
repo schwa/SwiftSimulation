@@ -31,9 +31,7 @@ let package = Package(
             .copy("Life/Patterns/gunstar_105.lif"),
             .copy("Life/Patterns/hacksaw_105.lif"),
             .copy("Life/Patterns/newgun2_105.lif"),
-        ], swiftSettings: [.unsafeFlags(["-Xfrontend", "-warn-concurrency", "-Xfrontend", "-enable-actor-data-race-checks"])]),
-
-
+        ]),
         .testTarget(
             name: "SimulationTests",
             dependencies: ["SwiftSimulation"]),
